@@ -6034,10 +6034,7 @@ font-size: 1em;
   }
 }
 
-
-
-
-
+/*PRODUKTY - skalowanie listy*/
 @media (min-width:768px){
   /* 2*220 */
   #box_mainproducts .innerbox{
@@ -6074,4 +6071,8 @@ font-size: 1em;
   #box_mainproducts .innerbox{
   width:1500px;
   }
+}
+/* pielęgnacja dywaników */
+.pielegnacja-bg{
+  background-image: url(https://texer.eu/skins/user/rwd_shoper_2/images/user/pielegnacja-banner.jpg);
 }
