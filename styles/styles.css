@@ -1,7 +1,8 @@
-.main .box .boxhead h3, .main .box .boxhead h1 {
+/* .main .box .boxhead h3, .main .box .boxhead h1 {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
 }
+*/
 
 :root {
   /* ------------------------------------red------------- */
@@ -38,7 +39,7 @@
 
   /* ------------------------------------blacks------------- */
   /* var(--color-almostblack); */
-  --color-almostblack: #2f2f2f;;
+  --color-almostblack: #2f2f2f;
 
   /* var(--color-black17); */
   --color-black17: #171717;
@@ -74,6 +75,7 @@ html {
 [class*="col-"] {
     float: left;
     padding: 15px;
+    box-sizing: border-box;
 }
 
 .col-6{
@@ -87,7 +89,7 @@ html {
 @media (max-width: 1559px) {
   /* For laptops: */
   .col-2{
-      width: 45%;
+      width: 15%;
   }
 }
 
@@ -5338,7 +5340,7 @@ font-size: 1em;
   font-weight: 300 !important;
 }
 
-#infopage10 .boxhead, #infopage11 .boxhead, #infopage12 .boxhead, #infopage14 .boxhead, #infopage15 .boxhead, #infopage16 .boxhead {
+#infopage10 .boxhead, #infopage11 .boxhead, #infopage12 .boxhead, #infopage13 .boxhead, #infopage14 .boxhead, #infopage15 .boxhead, #infopage16 .boxhead {
   display: none;
 }
 
@@ -6073,6 +6075,183 @@ font-size: 1em;
   }
 }
 /* pielęgnacja dywaników */
-.pielegnacja-bg{
+#pielegnacja-bg{
   background-image: url(https://texer.eu/skins/user/rwd_shoper_2/images/user/pielegnacja-banner.jpg);
+  width: 100%;
+  background-repeat: no-repeat;
+  height: 500px;
+  background-size: contain;
+}
+.h1-piel.txt-center{
+  font-size: 4em;
+}
+.h3-piel{
+  font-family: 'Source Sans Pro';
+  font-size: 2.1em !important;
+  font-weight: 500 !important;
+  margin: 0 !important;
+  transform: scaleY(0.92);
+}
+.h2-piel{
+  font-family: 'Source Sans Pro';
+  font-size: 4em !important;
+  font-weight: 600 !important;
+  margin: 0 !important;
+  margin-top: -0.3em !important;
+  padding-bottom: 0.1em;
+}
+.p-piel{
+  font-family: 'Source Sans Pro';
+  font-size: 1.8em !important;
+  margin: 0 !important;
+}
+.col-4.piel-txt{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* min-height: 286px; */
+  padding: 15px;
+  background-color: var(--color-formwhite);
+  height: 20em;
+  margin: 40px 0;
+}
+.img-piel{
+  display: block;
+  border-radius: 15px;
+  width: 100%;
+  height: auto;
+}
+.piel-section{
+  background-color: var(--color-fff);
+  padding: 15px 0;
+}
+#infopage13 .col-2{
+  height: 20em;
+  background-color: var(--color-formwhite);
+  margin: 40px 0 40px 0;
+}
+@media (min-width: 1870px){
+  .piel-t5{
+    margin-left: 45px;
+    text-align: justify;
+    line-height: normal;
+  }
+}
+@media (max-width: 1870px) and (min-width: 1651px){
+  #infopage13 .col-2{
+    width: 12%;
+  }
+  #infopage13 .col-4{
+    width: 38%;
+  }
+}
+@media (max-width: 1650px) and (min-width: 1571px) {
+  #infopage13 .col-2{
+    width: 10%;
+  }
+  #infopage13 .col-4{
+    width: 40%;
+  }
+}
+@media (max-width: 1570px) and (min-width: 1461px) {
+  #infopage13 .col-2{
+    width: 7%;
+  }
+  #infopage13 .col-4{
+    width: 43%;
+  }
+}
+@media (max-width: 1460px) and (min-width: 1421px) {
+  #infopage13 .col-2{
+    width: 5%;
+  }
+  #infopage13 .col-4{
+    width: 45%;
+  }
+}
+@media (max-width: 1420px) {
+  #pielegnacja-bg{
+    height: 500px;
+  }
+  #infopage13 .col-2{
+    width: 5%;
+  }
+  #infopage13 .col-4{
+    width: 45%;
+  }
+  #infopage13 .piel-section{
+    background-color: var(--color-formwhite);
+    padding: 10px;
+    margin: 20px 0;
+  }
+  #infopage13 .col-4.piel-txt{
+    height: 25.5em;
+    margin: 0;
+  }
+  #infopage13 .col-4.oc-rowimg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 25.5em;
+    margin: 0;
+  }
+  #infopage13 .col-2{
+    display: none;
+  }
+}
+@media (max-width: 978px) and (min-width: 768px){
+  #pielegnacja-bg{
+    height: auto;
+    min-height: 220px;
+    max-height: 270px;
+  }
+  #infopage13 .oc-rowimg img {
+      width: 100%;
+  }
+  #infopage13 .col-4.piel-txt{
+    width: 40%;
+    margin: 10px 0;
+  }
+  #infopage13 .col-4.oc-rowimg{
+    width: 60%;
+    margin: 10px 0;
+  }
+  #infopage13 .row.piel-formwhite-bg{
+    height: 27.5em;
+  }
+}
+@media (max-width: 767px){
+
+
+#pielegnacja-bg {
+    height: 120px;
+    background-size: contain;
+  }
+  #infopage13 .piel-section{
+    background-color: var(--color-fff);
+    border-radius: 15px;
+  }
+  #infopage13 .col-4{
+    width: 100%;
+  }
+  #infopage13 .col-2{
+    display: none;
+  }
+  #infopage13 .col-4.oc-rowimg{
+    height: auto;
+    padding: 0 15px;
+  }
+  #infopage13 .oc-rowimg img{
+    width: 100%;
+    padding: 0;
+  }
+  #infopage13 .col-4.piel-txt {
+    height: auto;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 84%;
+    margin: 0 8%;
+  }
 }
