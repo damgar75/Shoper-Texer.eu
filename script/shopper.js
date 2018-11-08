@@ -1,5 +1,4 @@
 //LOGI
-
 function LOG(){
   console.log(document.querySelector(".row").offsetHeight)
   console.log(document.querySelector(".menu.row").offsetHeight)
@@ -53,9 +52,17 @@ window.addEventListener('load', function(){
     x[i].innerHTML = x[i].innerHTML.replace( /Sport./g,'Dywaniki<br/><b>Sport</b><br/>');
     }
   console.log(x)
-
 });
 
+// usunięcie logowania powyżej "step1" z koszyka
+// window.addEventListener('load', function(){
+//   if (window.location.protocol != "texer.eu/pl/basket/step2") {
+//      document.getElementsById("box_loginsmall").style.display='none';
+//   }
+// });
+
+
+//sticky bar
 if ($(window).width() >= 768) {
 //sticky
 //onSCROLL
