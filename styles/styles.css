@@ -869,6 +869,7 @@ footer .innerfooter ul.overall{
   opacity: 0.3;
   font-weight: 300;
   transition: all 1s;
+  display:  none;
 }
 #contact-index:hover{
   opacity: 1;
@@ -2436,7 +2437,7 @@ button.close.icon-remove span {
   max-height: fit-content;
 }
 #box_basketlist h3 {
-  margin-top: 2em;
+  margin-top: 0;
   color: var(--color-almostblack);
   font-size: 2.7em;
   font-family: 'Roboto', sans-serif;
@@ -3282,7 +3283,7 @@ input, textarea, select, {
     border-bottom: none;
     height: 44px;
     margin-top: -6px;
-    text-transform: uppercase;
+    text-transform: capitalize;
     letter-spacing: 1px;
 }
 
@@ -6514,4 +6515,54 @@ font-size: 1em;
   #pielegnacja-bg {
     height: 100px;
   }
+}
+
+.shop_basket_address #box_loginsmall, .shop_basket_step3 #box_loginsmall, .shop_basket_done #box_loginsmall{
+   display: none;
+}
+.shop_product_list .group.group-filter {
+   display: none;
+}
+
+#contact-up{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  width: 100%;
+  position: fixed;
+  top: 10px;
+  z-index: 12;
+  opacity: 0.2;
+  transition: .3s ease-out;
+}
+#contact-up:hover{
+  opacity: 1;
+}
+#contact-up ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#contact-up li {
+  float: left;
+  color: var(--color-fff);
+  font-size: 11px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  padding: 0 15px;
+  letter-spacing: 0.3px;
+}
+
+#contact-up li a {
+    display: inline-block;
+    color: var(--color-fff);
+    text-align: center;
+    text-decoration: none;
+}
+#contact-up .fa {
+    display: inline-block;
+    padding: 0 4px;
 }

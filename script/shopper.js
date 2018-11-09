@@ -4,26 +4,10 @@ function LOG(){
   console.log(document.querySelector(".menu.row").offsetHeight)
 };
 
-//ukrywanie polecanych produktów
-window.addEventListener('load', function(){
-   if(document.getElementById("box_mainproducts")!=null && location.href!="https://texer.eu/"){
-		document.getElementById("box_mainproducts").style.display='block';
-   }
-});
 //ładowanie marek(nasłuchwanie)
 window.addEventListener('load', function(){
 	if(document.getElementById("search1")!=null)Load()
 	else if(document.getElementById("search-mini")!=null)Load()
-});
-//ładowanie burger menu
-window.addEventListener('load', function(){
-	var div = document.createElement("li");
-div.innerHTML = '<h3><a href="javascript:void(0);" class="spanhover mainlevel icon"  title="Menu" id="headlink7"><span><i class="fa fa-bars" style="font-size:1.5em;"></i></span><img src="/public/images/1px.gif" alt="" class="px1"></a></h3><div class="submenu level1"><ul class="level1"><li class="" id="parent"><h3><a href="/" title="Strona główna" id="headlink5" class="spanhover"><span>strona główna</span><img src="/public/images/1px.gif" alt="" class="px1"></a></h3></li><li class=""id="hcategory_107"><h3><a href="/pl/c/Mocowania-Dywanikow/104" title="Mocowania Dywaników" id="headlink10" class="spanhover"><span>Mocowania dywaników</span><img src="/public/images/1px.gif" alt="" class="px1" /></a></h3></li><li class="" id="hcategory_106"><h3><a href="/pl/c/Motoryzacja/582" title="Motoryzacja" id="headlink11" class="spanhover"><span>Motoryzacja</span><img src="/public/images/1px.gif" alt="" class="px1" /></a></h3></li><li class="" id="hcategory_29"><h3><a href="/pl/c/Dywaniki-Samochodowe/29" title="Dywaniki Samochodowe" id="headlink9" class="spanhover"><span>Dywaniki Samochodowe</span><img src="/public/images/1px.gif" alt="" class="px1" /></a></h3></li><li class="" id="hcategory_29"><h3><a href="/pl/i/Kontakt/6" title="Kontakt" id="headlink6" class="spanhover"><span>Kontakt</span><img src="/public/images/1px.gif" alt="" class="px1" /></a></h3></li><li class="" id="hcategory_29"><h3><a href="/pl/i/Regulamin/2" title="Regulamin" id="headlink7" class="spanhover"><span>Regulamin</span><img src="/public/images/1px.gif" alt="" class="px1" /></a></h3></li></ul></div>';
-div.className = "parent";
-div.id = "hcategory_104";
-var x = document.querySelector(".menu-list.large.standard");
-	x.prepend(div);
-	document.querySelector(".wrap.rwd").style.visibility='visible';
 });
 
 //dodanie kontaktu w header
@@ -34,9 +18,13 @@ window.addEventListener('load', function(){
   div.id = "contact-index";
   var d = document.querySelector(".login-bar.row.container");
     d.prepend(div);
-    document.querySelector(".wrap.rwd").style.visibility='visible';
 });
 
+//preloader
+//dodanie HTML loader
+window.addEventListener('load', function(){
+  document.getElementsByClassName("wrap.rwd").innerHTML+= '<div id="loader-wrapper"><div class="load"><hr/><hr/><hr/><hr/></div></div>';
+});
 //Pogrubienie tytułów w widoku wyszukiwania
 window.addEventListener('load', function(){
   var x = document.getElementsByClassName("productname");
@@ -54,14 +42,6 @@ window.addEventListener('load', function(){
   console.log(x)
 });
 
-// usunięcie logowania powyżej "step1" z koszyka
-// window.addEventListener('load', function(){
-//   if (window.location.protocol != "texer.eu/pl/basket/step2") {
-//      document.getElementsById("box_loginsmall").style.display='none';
-//   }
-// });
-
-
 //sticky bar
 if ($(window).width() >= 768) {
 //sticky
@@ -74,7 +54,6 @@ window.addEventListener('scroll', function(){
 window.addEventListener('resize', function(){
 	Sticky();
 });
-
 
   //FUNKCJE
   //sticky
