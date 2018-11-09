@@ -275,7 +275,7 @@ form textarea:focus, form input[type="text"]:focus, form input[type="password"]:
     top: 0;
   }
 }
-@media screen and (max-width: 767px){
+@media (max-width: 767px){
     .wrap.rwd {
       background-image: url(https://texer.eu/skins/user/rwd_shoper_2/images/user/bg3gradient-mobile2.jpg);
       width: 100vw;
@@ -322,7 +322,7 @@ select#search3, #search4{
   display: none
 } */
 /*RWD przycisk - "pokaż pełną wersję strony"*/
-@media screen and (max-width: 767px){
+@media (max-width: 767px){
   #turn-classic.rwd, #turn-classic {
       margin: 1em;
       margin-bottom: 1em;
@@ -449,7 +449,7 @@ select#search3, #search4{
 #cookie .close:hover{
   color: var(--color-red);
 }
-@media screen and (max-width: 1180px){
+@media (max-width: 1180px){
   #cookie {
     background-color: rgba(0,0,0,0.7);
     position: fixed;
@@ -486,7 +486,7 @@ select#search3, #search4{
     color: var(--color-black17);
 }
 
-@media screen and (max-width: 767px){
+@media (max-width: 767px){
   .menu #rwd-menu{
     background-color: var(--color-formwhite);
   }
@@ -613,14 +613,14 @@ ul.level1::before {
     margin-left: auto;
     margin-right: auto;
 }
-@media screen and (max-width: 767px){
+@media (max-width: 767px){
   .width80{
     width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
 }
-@media screen and (min-width: 768px){
+@media (min-width: 768px){
 	.menu {
     max-width: 100%;
     padding-left: 10%;
@@ -651,13 +651,14 @@ background: no-repeat 96% 50% #af2b2b;
 }
 #box_loginsmall{
   width: 30%;
-  margin: 3vh 35vh 0 35vw;
+  margin: 3vh auto;
   background-color: var(--color-lightwhite);
   border-radius: 1.5em;
   border: 1px solid var(--color-formwhite);
   box-sizing: border-box;
   padding: 20px 50px;
   margin-bottom: 2em;
+  display: flex;
 }
 #box_loginsmall .boxhead span{
   font-size: 2.5em;
@@ -769,7 +770,7 @@ background: no-repeat 96% 50% #af2b2b;
   background: transparent;
   color: var(--color-red);
 }
-@media screen and (max-width: 767px){
+@media (max-width: 767px){
   .top, .footer {
     margin: 0;
   }
@@ -777,7 +778,7 @@ background: no-repeat 96% 50% #af2b2b;
 /*------------------------Footer-------------------*/
 /*STOPKA*/
 .bottom-footer{
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 .footer {
   min-width: 100%;
@@ -794,7 +795,7 @@ background: no-repeat 96% 50% #af2b2b;
   font-size: 1em;
 }
 .footer.innerfooter ul.overall ul li{
-  padding-top: 0px;
+  padding-top: 0;
 }
 footer .innerfooter ul.overall{
   width: 80%;
@@ -813,8 +814,8 @@ footer .innerfooter ul.overall{
 }
 
 .footer .innerfooter ul.overall > li {
-  border-top: 0px solid var(--color-almostblack); /*ew. zmianić na 1px*/
-  border-bottom: 0px solid var(--color-almostblack); /*ew. zmianić na 1px*/
+  border-top: 0 solid var(--color-almostblack); /*ew. zmianić na 1px*/
+  border-bottom: 0 solid var(--color-almostblack); /*ew. zmianić na 1px*/
   background-color: var(--color-black17);
   color: var(--color-fff);
   padding-top: 2.5em;
@@ -825,10 +826,10 @@ footer .innerfooter ul.overall{
 
 .innerfooter.container.row{
   box-sizing: border-box;
-  box-shadow: 0px 4px 12px -4px rgba(0,0,0,0.43);
+  box-shadow: 0 4px 12px -4px rgba(0,0,0,0.43);
 }
 
-@media screen and (max-width: 767px){
+@media (max-width: 767px){
   .footer {
     font-size: 14px;
     /*font-weight: 200;*/
@@ -1029,9 +1030,9 @@ button[name=button1] {
     -o-transition: background 1s ease-in-out;
     transition: background 1s ease-in-out;
 
-    /* -webkit-box-shadow: 1px 1px 0px 0px #1D71B9;
-    -moz-box-shadow: 1px 1px 0px 0px #1D71B9;
-    box-shadow: 1px 1px 0px 0px #1D71B9;
+    /* -webkit-box-shadow: 1px 1px 0 0 #1D71B9;
+    -moz-box-shadow: 1px 1px 0 0 #1D71B9;
+    box-shadow: 1px 1px 0 0 #1D71B9;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px; */
     border-radius: 12px;
@@ -1073,9 +1074,9 @@ button[name=button2] {
     transition: background 1s ease-in-out;
     transition: 0.6s ease-in-out;
 
-    /* -webkit-box-shadow: 1px 1px 0px 0px #135FD8;
-    -moz-box-shadow: 1px 1px 0px 0px #135FD8;
-    box-shadow: 1px 1px 0px 0px #135FD8;
+    /* -webkit-box-shadow: 1px 1px 0 0 #135FD8;
+    -moz-box-shadow: 1px 1px 0 0 #135FD8;
+    box-shadow: 1px 1px 0 0 #135FD8;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px; */
 
@@ -1097,7 +1098,7 @@ button[name=button2]:hover {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#135FD8', endColorstr='#0075DC');
     box-shadow: -3px 3px 3px rgba(0, 0, 0, .2); */
 }
-@media screen and (max-width: 767px){
+@media (max-width: 767px){
     button[name=button1]{
       max-width: 90%;
       padding: none;
@@ -1112,8 +1113,8 @@ button[name=button2]:hover {
     }
 }
 /*Koszyk- tabelka TR*/
-td.name, .rwd-hide-medium.time, .quantity, .rwd-hide-small.price, .sum, .actions,{
-    font-size: 13px !important;
+td.name, .rwd-hide-medium.time, .quantity, .rwd-hide-small.price, .sum, .actions{
+    font-size: 13px;
 }
 /* koszyk dostawa, opcje dostawy */
 #cart-options .delivery-container .delivery {
@@ -1125,7 +1126,7 @@ td.name, .rwd-hide-medium.time, .quantity, .rwd-hide-small.price, .sum, .actions
   border-bottom: none;
 }
 /*Koszyk-kontener dostawa*/
-#cart-options .delivery-container, .payment-container, .summary-container,{
+#cart-options .delivery-container, .payment-container, .summary-container{
     font-size: 1.5em;
 }
 #cart-options .payment-container .payment.none{
@@ -1141,13 +1142,13 @@ td.name, .rwd-hide-medium.time, .quantity, .rwd-hide-small.price, .sum, .actions
 }
 
 #cart-options .summary-container .sum .desc{
-    font-size: 2.2em;
+    font-size: 1.2em;
     font-weight: 600;
     color: var(--color-blue);
 }
 
 #cart-options .summary-container .sum .value{
-    font-size: 3em;
+    font-size: 2em;
     color: var(--color-blue);
 }
 /*Koszyk - ceny (rozstawienie)*/
@@ -1197,7 +1198,7 @@ td.name, .rwd-hide-medium.time, .quantity, .rwd-hide-small.price, .sum, .actions
   color: var(--color-almostblack) !important;
 }
 
-.summary-container .desc, .cost, {
+.summary-container .desc, .cost {
   padding-right: 0.3em;
 }
 .summary-container {
@@ -1229,7 +1230,7 @@ header .logo-bar .search-form .btn {
     background-color: transparent;
     border: none;
 }
-@media screen and (max-width: 979px) and (min-width: 768px){
+@media (max-width: 979px) and (min-width: 768px){
   search-form.right{
     max-width: 20em;
     float: right;
@@ -1238,7 +1239,7 @@ header .logo-bar .search-form .btn {
 }
 /*login bar*/
 header .login-bar {
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 header .login-bar li {
     color: #fff !important;
@@ -1271,7 +1272,7 @@ input, textarea, select, button {
     letter-spacing: 0.0em;
     word-spacing: normal;
     text-transform: none;
-    text-indent: 0px;
+    text-indent: 0;
     text-shadow: none;
     display: inline-block;
     text-align: start;
@@ -1280,7 +1281,7 @@ input, textarea, select, button {
 }
 .modal .modal-body .search-form .search-btn {
     width: 24%;
-    padding: 0px 0;
+    padding: 0 0;
     background-color: #80aaf2;
     border: none;
 }
@@ -1320,7 +1321,7 @@ input, textarea, select, button {
 /*==========================================================================================================*/
 /*W desktop 80% szerokości // W poniżej 767px 100% szerokości //\\ Inaczej jeśli background 100% width*/
 /*==========================================================================================================*/
-@media screen and (max-width: 767px){
+@media (max-width: 767px){
   .rwd.wrap .main {
     margin: 0;
   }
@@ -1349,13 +1350,13 @@ p.deliv {
 }
 
 #box_filter{
-  max-width: 80%;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 30px;
   color: var(--color-gray);
-  padding-bottom: 30px;
+  background: var(--color-lightwhite);
   margin-bottom: 0;
+  padding: 10px 10%;
 }
 #box_filter ul li.priceinput .bottombuttons .btn{
   padding: 0.2em 0.5em;
@@ -1367,14 +1368,14 @@ p.deliv {
   border-radius: 5px;
 }
 #box_filter .multiselect {
-    background: url(https://texer.eu/skins/user/rwd_shoper_2/images/user/ico_arrow_down_small_dark.png) no-repeat 95% 50% transparent;
-    border: 1px solid transparent;
-    border-top: 1px solid var(--color-lightgray);
-    border-left: 2px solid var(--color-blue);
-    box-sizing: border-box;
-    border-bottom: 1px solid var(--color-lightgray);
-    border-right: 1px solid var(--color-lightgray);
-  }
+  background: url(https://texer.eu/skins/user/rwd_shoper_2/images/user/ico_arrow_down_small_dark.png) no-repeat 95% 50% #ffffff;
+  border: 1px solid transparent;
+  border-top: 1px solid var(--color-formwhite);
+  border-left: 2px solid var(--color-blue);
+  box-sizing: border-box;
+  border-bottom: 1px solid var(--color-formwhite);
+  border-right: 1px solid var(--color-formwhite);
+}
 #box_filter .multiselect ul{
   max-height: 50vh;
 }
@@ -1418,7 +1419,7 @@ p.deliv {
   margin-right: auto;
 }
 
-@media screen and (max-width: 767px){
+@media (max-width: 767px){
   #box_filter{
     max-width: 90%;
     margin-left: auto;
@@ -1470,7 +1471,7 @@ p.deliv {
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (max-width: 767px){
+@media (max-width: 767px){
   #regulamin{
     max-width: 100%;
     margin-left: auto;
@@ -1487,7 +1488,7 @@ p.deliv {
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (max-width: 767px){
+@media (max-width: 767px){
   #kontakt-main{
     max-width: 100%;
     margin-left: auto;
@@ -1500,7 +1501,7 @@ p.deliv {
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (max-width: 767px){
+@media (max-width: 767px){
   #box_contact{
     max-width: 100%;
     margin-left: auto;
@@ -1591,7 +1592,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill{
 
 
 
-@media screen and (max-width: 767px){
+@media (max-width: 767px){
   #box_login{
     max-width: 80%;
     margin-left: auto;
@@ -1661,7 +1662,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill{
   margin-top: 1em;
   margin-left: 24.5%;
 }
-@media screen and (max-width: 767px){
+@media (max-width: 767px){
   #box_register{
     max-width: 90%;
     margin-left: auto;
@@ -1737,7 +1738,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill{
   margin-top: 2em;
 }
 
-@media screen and (max-width: 767px){
+@media (max-width: 767px){
   #box_productsearch {
   width: 90%;
   margin-left: auto;
@@ -1795,7 +1796,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill{
 .alert{
   font-size: 13px;
   padding: 20px 0;
-  margin: 20px 0px;
+  margin: 20px 0;
   text-align: -webkit-center;
   color: #fff;
 }
@@ -1862,7 +1863,7 @@ button.close.icon-remove span {
     text-decoration: underline;
 }
 
-@media screen and (max-width: 767px){
+@media (max-width: 767px){
   #box_404 {
     max-width: 95%;
     margin-left: auto;
@@ -1944,7 +1945,7 @@ button.close.icon-remove span {
 #cart-options .summary-container {
   margin-top: 0;
   text-align: right;
-  min-height: 27.6em;
+  min-height: 18.55em;
   margin-left: 10px;
   max-height: fit-content;
   background: var(--color-lightwhite);
@@ -2030,7 +2031,7 @@ button.close.icon-remove span {
   }
 }
 
- @media screen and (min-width: 1380px) {
+ @media (min-width: 1380px) {
   #box_productfull h1 {
     margin-top: 2em;
     color: var(--color-almostblack);
@@ -2102,7 +2103,7 @@ button.close.icon-remove span {
   .rwd .tab-container nav ul li .boxhead{
     box-sizing: border-box;
     background-color: transparent;
-    border-radius: 6px 6px 0px 0px;
+    border-radius: 6px 6px 0 0;
     padding: 0 10em;
   }
 
@@ -2115,9 +2116,9 @@ button.close.icon-remove span {
     background-color: transparent;
   }
   .tab-container nav ul li .boxhead.active{
-    border-top: 0px solid var(--color-almostblack);
-    border-left: 0px solid var(--color-almostblack);
-    border-right: 0px solid var(--color-almostblack);
+    border-top: 0 solid var(--color-almostblack);
+    border-left: 0 solid var(--color-almostblack);
+    border-right: 0 solid var(--color-almostblack);
     border-bottom: 3px solid var(--color-blue);
   }
 
@@ -2139,7 +2140,7 @@ button.close.icon-remove span {
 #box_productfull .boxhead > .active{
 
 } */
- @media screen and (max-width: 1379px) {
+ @media (max-width: 1379px) {
    #box_productfull {
      max-width: 80%;
      margin-left: auto;
@@ -2163,7 +2164,7 @@ button.close.icon-remove span {
      border: none;
    }
  }
-@media screen and (max-width: 767px){
+@media (max-width: 767px){
   #box_productfull {
     max-width: 92%;
     margin-left: auto !important;
@@ -2211,7 +2212,7 @@ button.close.icon-remove span {
 }
 /*karta produktu - BASKET*/
 #box_productfull .basket {
-    margin-top: 0px !important;
+    margin-top: 0 !important;
 }
 /*karta produktu - "Wysyłka w" i "dostępność""*/
 #box_productfull .availability .first, #box_productfull .tax-additional-info .first {
@@ -2315,7 +2316,7 @@ button.close.icon-remove span {
   background-image: radial-gradient(ellipse farthest-corner at center center,rgba(0,0,0,0.6),rgba(0,0,0,0.6) 35%,rgba(0,0,0,0.9) 100%) !important;
 }
 
-@media screen and (max-width: 1840px){
+@media (max-width: 1840px){
     /*karta produktu - Poleć znajomemu i zapytaj o produkt*/
     #box_productfull .links-q {
         width: 48%;
@@ -2329,7 +2330,7 @@ button.close.icon-remove span {
     }
 }
 
-@media screen and (max-width: 979px) and (min-width: 768px){
+@media (max-width: 979px) and (min-width: 768px){
     /*karta produktu - Poleć znajomemu i zapytaj o produkt*/
     #box_productfull .links-q {
         width: 100%;
@@ -2350,7 +2351,7 @@ button.close.icon-remove span {
   padding-bottom: 2em;
 }
 
-@media screen and (max-width: 767px){
+@media (max-width: 767px){
     #box_productfull{
       height: 100%;
       color: var(--color-almostblack);
@@ -2369,7 +2370,7 @@ button.close.icon-remove span {
         margin-bottom: 1em;
     }
     /*karta produktu - "Cena"*/
-    .basket.price, .price-name,{
+    .basket.price, .price-name{
         text-transform: lowercase;
         margin-top: 1em;
         margin-bottom: 2em;
@@ -2459,7 +2460,7 @@ button.close.icon-remove span {
 }
 
 #box_basketlist .recount, .deliveryhead, .desc {
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
 #box_basketlist .promo-container::before{
@@ -2471,23 +2472,23 @@ button.close.icon-remove span {
 #cart-options .promo-container .promocode {
   text-align: right;
   margin-top: 2em;
-  color: var(--color-red);
+  color: #44bb76;
   font-size: 1.2em;
 }
 #cart-options .promo-container .promo .value{
   font-weight: bold;
   margin-left: 0.5em;
-  color: var(--color-red);
-  font-size: 3em;
+  color: #44bb76;
+  font-size: 2em;
 }
 #cart-options .promo-container .promo:last-child{
   margin-bottom: 1em;
   font-weight: 600;
-  color: var(--color-gray);
+  color: #44bb76;
 }
 #cart-options .deliveryhead .cost{
   font-weight: 500;
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 #cart-options .summary-container > div{
   margin-bottom: 5px;
@@ -2497,7 +2498,7 @@ button.close.icon-remove span {
   font-weight: 600;
 }
 #cart-options .summary-container .deliveryhead{
-  font-size: 1.5em;
+  font-size: 1.2em;
   border-bottom: 1px solid var(--color-formwhite);
   padding-bottom: 10px;
   margin-bottom: 15px;
@@ -2523,7 +2524,7 @@ table.table {
     border-left: 1px solid var(--color-lightgray);
     border-right: 1px solid var(--color-lightgray);
 }
-@media screen and (max-width: 767px){
+@media (max-width: 767px){
   #box_basketlist{
     max-width: 95%;
     margin-left: auto;
@@ -2552,7 +2553,7 @@ table.table {
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (max-width: 767px){
+@media (max-width: 767px){
   #rodo{
     max-width: 100%;
     margin-left: auto;
@@ -2579,7 +2580,7 @@ table.table {
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (max-width: 767px){
+@media (max-width: 767px){
   #regulamin{
     max-width: 100%;
     margin-left: auto;
@@ -2609,14 +2610,14 @@ table.table {
 
 
 /*RESPONSYWNE ELEMENTY*/
-@media screen and (max-width: 767px){
+@media (max-width: 767px){
   .main {
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
 }
- @media screen and (max-width: 767px){
+ @media (max-width: 767px){
   .menu {
       min-width: 100%;
   }
@@ -2624,12 +2625,12 @@ table.table {
   	  min-width: 80%;
   }
 }
-@media screen and (max-width: 1200px){
+@media (max-width: 1200px){
   .container {
       width: 1200px;
   }
 }
- @media screen and (max-width: 979px) and (min-width: 768px){
+ @media (max-width: 979px) and (min-width: 768px){
   .rwd .container {
       min-width: 80%;
   }
@@ -2640,7 +2641,7 @@ table.table {
   	  min-width: 80%;
   }
 }
-@media screen and (max-width: 979px) and (min-width: 768px){
+@media (max-width: 979px) and (min-width: 768px){
   .rwd .menu .innermenu {
       height: 34px;
       min-height: 34px;
@@ -2648,7 +2649,7 @@ table.table {
       border: none;
   }
 }
-@media screen and (max-width: 767px) and (min-width: 481px){
+@media (max-width: 767px) and (min-width: 481px){
   .rwd header {
        padding: 0;
   }
@@ -2656,12 +2657,12 @@ table.table {
 
 
  /*menu & login*/
- @media screen and (max-width: 767px){
+ @media (max-width: 767px){
   .rwd header .logo-bar{
     margin-bottom: 0;
   }
   .rwd .menu .innermenu {
-      border-top: 0px solid #f2f2f2;
+      border-top: 0 solid #f2f2f2;
       border-bottom: 1px solid #f2f2f2;
       color: #000;
   }
@@ -2675,7 +2676,7 @@ table.table {
 /*Menu SEARCH strona główna*/
 #search {
   width: 100%;
-  margin: 0px;
+  margin: 0;
   color: var(--color-fff);
 }
 .pick-car-index {
@@ -2699,7 +2700,7 @@ table.table {
   max-height: 80px;
 }
 #search0 .formularz-index {
-    max-height: 0px;
+    max-height: 0;
     margin-top: 53px;
     margin-bottom: -20px;
     margin-left: auto;
@@ -2730,6 +2731,9 @@ table.table {
   background: #80aaf214 url(https://texer.eu/skins/user/rwd_shoper_2/images/user/ico_arrow_down_small_fff.png) no-repeat 95% 50%;
   border-radius: 6px;
 }
+#form_marka:hover{
+  background: var(--color-red) url(https://texer.eu/skins/user/rwd_shoper_2/images/user/ico_arrow_down_small_fff.png) no-repeat 95% 50%;
+}
 #form_model {
   line-height: 16px;
   border: 1px solid #ef37451f;
@@ -2738,6 +2742,9 @@ table.table {
   background: #80aaf214 url(https://texer.eu/skins/user/rwd_shoper_2/images/user/ico_arrow_down_small_fff.png) no-repeat 95% 50%;
   border-radius: 6px;
   margin-top: 5px;
+}
+#form_model:hover{
+  background: var(--color-red) url(https://texer.eu/skins/user/rwd_shoper_2/images/user/ico_arrow_down_small_fff.png) no-repeat 95% 50%;
 }
 @media (min-width: 768px){
   .pick-car2.f-grid-5 #form_model {
@@ -2899,7 +2906,7 @@ button.odkryj:hover {
     font-size: 1.8em !important;
   }
 }
-@media screen and (max-width: 1179px) and (min-width: 980px){
+@media (max-width: 1179px) and (min-width: 980px){
   .promocja1 {
     margin-left: 0em;
   }
@@ -2942,7 +2949,7 @@ button.odkryj:hover {
     font-size: 2em;
   }
 }
-@media screen and (max-width: 979px) and (min-width: 768px){
+@media (max-width: 979px) and (min-width: 768px){
     #search {
       background-position: bottom;
       background-attachment: scroll;
@@ -2996,10 +3003,10 @@ button.odkryj:hover {
     }
     #search0 p {
       max-height: 2.5em;
-      margin-top: 0px;
-      margin-bottom: 0px;
+      margin-top: 0;
+      margin-bottom: 0;
       margin-left: auto;
-      margin-right: 0px;
+      margin-right: 0;
     }
   	#input, textarea, select {
       width: 80%;
@@ -3041,7 +3048,7 @@ button.odkryj:hover {
       margin: 0.1em 0.4em 0 0 !important;
     }
 }
-@media screen and (max-width: 767px){
+@media (max-width: 767px){
    #search1{
      background-attachment: scroll;
    }
@@ -3145,7 +3152,7 @@ button.odkryj:hover {
     display: none;
   }
  }
- @media screen and (max-height: 630px){
+ @media (max-height: 630px){
    .logo-index{
      margin-top: 3em;
    }
@@ -3204,7 +3211,7 @@ button.odkryj:hover {
 #input, textarea, select, button {
   color: var(--color-fff);
 }
-input, textarea, select, {
+input, textarea, select {
   font-weight: 300;
   letter-spacing: 0;
   min-width: 70%;
@@ -3218,9 +3225,9 @@ input, textarea, select, {
   opacity: 1;
   min-height: 20px;
   min-width: 10em;
-  border-right: 0px solid var(--color-darkgray);
-  border-top: 0px solid var(--color-darkgray);
-  border-bottom: 0px solid var(--color-darkgray);
+  border-right: 0 solid var(--color-darkgray);
+  border-top: 0 solid var(--color-darkgray);
+  border-bottom: 0 solid var(--color-darkgray);
   border-left: 5px solid var(--color-red);
   padding: 0.6em 1.4em 0.6em 0.4em;
   font-weight: 400;
@@ -3264,11 +3271,11 @@ input, textarea, select, {
 #box_currencies label.singleselect  {
   display: none;
 }
-@media screen and (max-width: 767px){
+@media (max-width: 767px){
   #box_languages{
     display: block;
     position: absolute;
-    top: 0px;
+    top: 0;
     right: 5px;
   }
   #box_currencies{
@@ -3299,6 +3306,33 @@ input, textarea, select, {
 }
 .menu .innermenu .menu-list li h3 a:hover{
   text-decoration: none;
+}
+@media (max-width: 1179px) {
+  .menu-list.large.standard{
+    overflow: hidden;
+    border-bottom: none;
+    height: 44px;
+    margin-top: -6px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .menu .innermenu .menu-list li h3 a{
+    font-size: 1em;
+  }
+  .menu .innermenu .menu-list li h3{
+    font-size: 1.35em;
+  }
+}
+@media (max-width: 979px) {
+  .menu .innermenu .menu-list li h3 a{
+    font-size: 1em;
+  }
+  .menu .innermenu .menu-list li h3{
+    font-size: 1.026em;
+  }
 }
 
 /*SZEROKOŚCI GRIDÓW*/
@@ -3339,7 +3373,7 @@ header {
   padding-bottom: 0;
 }
 
-@media screen and (max-width: 767px){
+@media (max-width: 767px){
   header {
     background-color: rgb(0,0,0, 0.2);
   }
@@ -3396,7 +3430,7 @@ ul.inline > li, ol.inline > li {
   width: 100%;
   line-height: 18px;
   padding-bottom: 20px;
-  margin: 0px;
+  margin: 0;
   color: var(--color-fff);
 }
 .form-mini {
@@ -3409,9 +3443,9 @@ ul.inline > li, ol.inline > li {
   margin-left: 2%;
   margin-right: 2%;
   font-weight: 300;
-  border-right: 0px solid var(--color-darkgray);
-  border-top: 0px solid var(--color-darkgray);
-  border-bottom: 0px solid var(--color-darkgray);
+  border-right: 0 solid var(--color-darkgray);
+  border-top: 0 solid var(--color-darkgray);
+  border-bottom: 0 solid var(--color-darkgray);
   border-left: 1px solid var(--color-red);
 }
 .pick-car1{
@@ -3427,7 +3461,7 @@ ul.inline > li, ol.inline > li {
   padding-top: 25px;
 }
 
-@media screen and (max-width: 979px) and (min-width: 768px){
+@media (max-width: 979px) and (min-width: 768px){
   #search-mini {
     padding-bottom: 0;
   }
@@ -3452,7 +3486,7 @@ ul.inline > li, ol.inline > li {
     display: none;
   }
 }
-@media screen and (max-width: 767px){
+@media (max-width: 767px){
   #search-mini {
   max-height: 150px;
   min-height: 100px;
@@ -3488,12 +3522,12 @@ ul.inline > li, ol.inline > li {
 }
 /*Koniec modułu SEARCH MINI*/
 /*O NAS*/
-@media screen and (min-width: 1180px){
+@media (min-width: 1180px){
 	#naszaFirma-text-mobile {
         display: none;
 	}
 }
-@media screen and (max-width: 1180px){
+@media (max-width: 1180px){
 	.onas-bg-naszaFirma {
         display: none;
 	}
@@ -3603,13 +3637,13 @@ ul.inline > li, ol.inline > li {
 .kontakt-dane-mobile p {
     line-height: 110%;
   }
-@media screen and (min-width: 768px){
+@media (min-width: 768px){
   .kontakt-mapa-mobile{
     display: none;
   }
 
 }
-@media screen and (max-width: 1180px) and (min-width: 768px){
+@media (max-width: 1180px) and (min-width: 768px){
   .kontakt-dane-mobile{
     display: block;
     text-align: center;
@@ -3627,7 +3661,7 @@ ul.inline > li, ol.inline > li {
     margin-top: 3em;
   }
 }
-@media screen and (max-width: 969px){
+@media (max-width: 969px){
   #contact-formularz {
     width: 70%;
     margin: 10%;
@@ -3645,7 +3679,7 @@ ul.inline > li, ol.inline > li {
     margin-left: 60%;
   }
 }
-@media screen and (max-width: 767px){
+@media (max-width: 767px){
   #kontakt{
     display: none;
   }
@@ -3755,13 +3789,13 @@ ul.inline > li, ol.inline > li {
   border-radius: 10px;
   padding: 0.2em 0.5em;
 }
-@media screen and (max-width: 1180px) and (min-width: 768px){
+@media (max-width: 1180px) and (min-width: 768px){
   #box_productfull .basket .form-basket .button_wrap .addtobasket, #box_productfull .basket .form-basket .button_wrap .availability-notifier-btn, #box_productfull .basket .form-basket .button_wrap .availability-notifier-unsubscribe-btn {
     min-width: 60%;
     max-width: 80%;
   }
 }
-@media screen and (max-width: 767px){
+@media (max-width: 767px){
   #box_productfull .basket .form-basket .button_wrap .addtobasket, #box_productfull .basket .form-basket .button_wrap .availability-notifier-btn, #box_productfull .basket .form-basket .button_wrap .availability-notifier-unsubscribe-btn {
     font-size: 1em;
     max-width: 100%;
@@ -3971,7 +4005,7 @@ ul.inline > li, ol.inline > li {
   margin-left: 20%;
   margin-right: 20%;
 }
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   .basket-step-border{
     max-width: 100%;
     margin-left: 0%;
@@ -4077,7 +4111,7 @@ ul.inline > li, ol.inline > li {
     margin-left: 10%;
     margin-right: 10%;
 }
-@media screen and (max-width: 767px){
+@media (max-width: 767px){
   .tab-container nav {
     max-width: 100%;
     margin-left: auto;
@@ -4111,7 +4145,7 @@ ul.inline > li, ol.inline > li {
   }
 }
 
-@media screen and (max-width: 767px){
+@media (max-width: 767px){
   .product-tab [class*="col-"]{
     padding: 0;
   }
@@ -4148,7 +4182,7 @@ ul.inline > li, ol.inline > li {
 /*-----------------Bottom-footer---------------------*/
 /*index-cechy*/
 #index-cechy{
-  margin: 0 0 0px 0;
+  margin: 0 0 0 0;
 }
 .cechy-desktop{
   max-width: 100%;
@@ -4206,7 +4240,7 @@ ul#dlaczegomy li :nth-child(5) {
     font-size: 20px;
 }
 
-@media screen and (max-width: 1840px) and (min-width: 1541px){
+@media (max-width: 1840px) and (min-width: 1541px){
 
   ul#dlaczegomy li :nth-child(3) {
       margin-left: 20px;
@@ -4222,7 +4256,7 @@ ul#dlaczegomy li :nth-child(5) {
   }
 }
 
-@media screen and (max-width: 1540px) and (min-width: 979px){
+@media (max-width: 1540px) and (min-width: 979px){
   #dlaczegomy {
     margin: 0;
     padding-top: 2em;
@@ -4276,7 +4310,7 @@ ul#dlaczegomy li :nth-child(5) {
   }
 }
 
-/* @media screen and (max-width: 978px) and (min-width: 767px){
+/* @media (max-width: 978px) and (min-width: 767px){
   #dlaczegomy {
     padding-bottom: 35%;
   }
@@ -4297,7 +4331,7 @@ ul#dlaczegomy li :nth-child(5) {
 
 } */
 
-@media screen and (max-width: 978px){
+@media (max-width: 978px){
   ul#dlaczegomy li {
       display: inline-block;
       font-size: 14px;
@@ -4361,7 +4395,7 @@ ul#dlaczegomy li :nth-child(5) {
   font-size: 2.2em;
   font-weight: 400;
   color: var(--color-fff);
-  letter-spacing: 0px;
+  letter-spacing: 0;
   margin: 0;
 }
 .cechy-left-col {
@@ -4384,7 +4418,7 @@ ul#dlaczegomy li :nth-child(5) {
   font-size: 1.7em;
   font-weight: 100;
   color: #C6C6C6;
-  letter-spacing: 0px;
+  letter-spacing: 0;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -4409,7 +4443,7 @@ ul#dlaczegomy li :nth-child(5) {
   font-size: 1.7em;
   font-weight: 100;
   color: #C6C6C6;
-  letter-spacing: 0px;
+  letter-spacing: 0;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -4481,7 +4515,7 @@ ul#dlaczegomy li :nth-child(5) {
    display: inline-block;
    margin-top: 40px;
  }
-@media screen and (max-width: 1540px) and (min-width: 768px)
+@media (max-width: 1540px) and (min-width: 768px)
  {
    .cechy-stopery {
     display: none;
@@ -4540,7 +4574,7 @@ ul#dlaczegomy li :nth-child(5) {
      margin-top: 0;
     }
  }
-@media screen and (max-width: 767px)
+@media (max-width: 767px)
  {
    .rwd .bottom-footer {
         margin: 0em;
@@ -4608,7 +4642,7 @@ ul#dlaczegomy li :nth-child(5) {
       margin-top: 3em;
      }
  }
- @media screen and (max-width: 590px){
+ @media (max-width: 590px){
     .cechy-left-content{
       background-size: 60%;
     }
@@ -4698,7 +4732,7 @@ ul#dlaczegomy li :nth-child(5) {
   font-size: 0.6em;
   line-height: normal;
 }
-@media screen and (max-width: 979px) and (min-width: 768px){
+@media (max-width: 979px) and (min-width: 768px){
   #footer-wybor{
     background-size: cover;
     background-position: 50% 50%;
@@ -4720,7 +4754,7 @@ ul#dlaczegomy li :nth-child(5) {
     display: table-cell;
   }
 }
-@media screen and (min-width: 768px){
+@media (min-width: 768px){
   .footer-wybor-opis{
     display: block;
   }
@@ -4728,7 +4762,7 @@ ul#dlaczegomy li :nth-child(5) {
     display: none;
   }
 }
-@media screen and (min-width: 591px) and (max-width: 767px){
+@media (min-width: 591px) and (max-width: 767px){
   .footer-wybor-opis-mobile{
     display: block;
   }
@@ -4778,7 +4812,7 @@ ul#dlaczegomy li :nth-child(5) {
     display: inline;
   }
 }
-@media screen and (max-width: 590px){
+@media (max-width: 590px){
   .footer-wybor-opis-mobile{
     display: block;
   }
@@ -4826,7 +4860,7 @@ ul#dlaczegomy li :nth-child(5) {
     display: inline;
   }
 }
-@media screen and (max-width: 442px){
+@media (max-width: 442px){
   .footer-liczby p{
     margin: 0.5em;
     display: inline-block;
@@ -4857,7 +4891,7 @@ ul#dlaczegomy li :nth-child(5) {
 /*------------obrazek----------*/
 /*----------BASIC---------*/
 .basic-foto-slider{
-  margin-top: 0px;
+  margin-top: 0;
   float: left;
   height: 350px;
   width: 33%;
@@ -4867,7 +4901,7 @@ ul#dlaczegomy li :nth-child(5) {
 }
 /*----------CARBON---------*/
 .carbon-foto-slider{
-  margin-top: 0px;
+  margin-top: 0;
   float: left;
   height: 350px;
   width: 33%;
@@ -4893,7 +4927,7 @@ ul#dlaczegomy li :nth-child(5) {
 }
 /*-----------LOGO----------*/
 .logo-foto-slider{
-  margin-top: 0px;
+  margin-top: 0;
   float: left;
   height: 350px;
   width: 33%;
@@ -4903,7 +4937,7 @@ ul#dlaczegomy li :nth-child(5) {
 }
 /*---------PREMIUM--------*/
 .premium-foto-slider{
-  margin-top: 0px;
+  margin-top: 0;
   float: left;
   height: 350px;
   width: 33%;
@@ -4930,7 +4964,7 @@ ul#dlaczegomy li :nth-child(5) {
 }
 /*--------EXCELLENCE-------*/
 .excellence-foto-slider{
-  margin-top: 0px;
+  margin-top: 0;
   float: left;
   height: 350px;
   width: 33%;
@@ -4956,7 +4990,7 @@ ul#dlaczegomy li :nth-child(5) {
 }
 /*----------Sport---------*/
 .sport-foto-slider{
-  margin-top: 0px;
+  margin-top: 0;
   float: left;
   height: 350px;
   width: 33%;
@@ -4982,7 +5016,7 @@ ul#dlaczegomy li :nth-child(5) {
 }
 /*-----------RIGUM----------*/
 .rigum-foto-slider{
-  margin-top: 0px;
+  margin-top: 0;
   float: left;
   height: 350px;
   width: 33%;
@@ -5114,7 +5148,7 @@ ul#dlaczegomy li :nth-child(5) {
 }
 
 /*RWD*/
- @media screen and (max-width: 1232px) and (min-width: 768px){
+ @media (max-width: 1232px) and (min-width: 768px){
   .box-slider .slider-nav {
       bottom: 4em;
   }
@@ -5239,7 +5273,7 @@ ul#dlaczegomy li :nth-child(5) {
 }
 
 
-@media screen and (max-width: 1280px){
+@media (max-width: 1280px){
   #box_slider_44{
     display: none;
   }
@@ -5316,7 +5350,7 @@ ul#dlaczegomy li :nth-child(5) {
   max-width: 50%;
 }
 
-@media screen and (min-width: 979px){
+@media (min-width: 979px){
 
   .col-md12{
     width: 100%;
@@ -5699,13 +5733,16 @@ font-size: 1em;
   border-right: none;
 }
 #infopage15 .center-box{
-  display: inline-block;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
-
+#infopage15 [class*="col-"]{
+  padding: 5px;
+}
 .col-2.forma-platnosci.center-box:last-child{
   border-right: none;
 }
-
 .col-2.forma-platnosci.center-box ul li:first-child{
   list-style-type: none;
   text-align: center;
@@ -5714,7 +5751,6 @@ font-size: 1em;
   list-style-type: none;
   text-align: center;
 }
-
 .col-2.forma-platnosci.center-box ul ul{
   padding-left: 0;
 }
@@ -5736,8 +5772,6 @@ font-size: 1em;
     margin: 0;
   }
 }
-
-
 /* Jak kupować */
 .jak-kupowac{
   width: 100%
@@ -5974,7 +6008,7 @@ font-size: 1em;
   margin-top: 6em;
 }
 
-.oc-txt p, .oc-txt h1, .oc-txt h3, {
+.oc-txt p, .oc-txt h1, .oc-txt h3 {
   display: block;
 }
 .oc-txt h3{
@@ -6229,11 +6263,11 @@ font-size: 1em;
 }
 #uf-fb{
   width: 10%;
-  padding: 0px 3px 0 0;
+  padding: 0 3px 0 0;
 }
 #uf-strona{
   width: 10%;
-  padding: 0px 3px 0 0;
+  padding: 0 3px 0 0;
 }
 #uf-carmat{
   width: 30%;
@@ -6498,8 +6532,8 @@ font-size: 1em;
   }
   #infopage13 .col-4.piel-txt {
     height: auto;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     width: 84%;
@@ -6529,7 +6563,8 @@ font-size: 1em;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
-  width: 100%;
+  width: 50%;
+  margin: 0 25%;
   position: fixed;
   top: 10px;
   z-index: 12;
@@ -6538,6 +6573,9 @@ font-size: 1em;
 }
 #contact-up:hover{
   opacity: 1;
+}
+#contact-up li:nth-child(2):hover{
+   cursor: default;
 }
 #contact-up ul {
     list-style-type: none;
@@ -6565,4 +6603,12 @@ font-size: 1em;
 #contact-up .fa {
     display: inline-block;
     padding: 0 4px;
+}
+@media (max-width: 979px) {
+  #contact-up{
+    display: none;
+  }
+}
+.shop_basket_address .client-address-different.address-handler{
+  display:none;
 }
