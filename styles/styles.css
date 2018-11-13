@@ -2722,7 +2722,7 @@ table.table {
   min-width: 100%;
   border-right: 3px solid var(--color-red);
   border-left: 3px solid var(--color-red);
-  border-radius: 6px;
+  border-radius: 8px;
 }
 #form_marka {
   line-height: 16px;
@@ -3232,6 +3232,7 @@ input, textarea, select {
   padding: 0.6em 1.4em 0.6em 0.4em;
   font-weight: 400;
 }
+
 /*########*/
 /* .box .boxhead span {
   display: block;
@@ -6611,4 +6612,78 @@ font-size: 1em;
 }
 .shop_basket_address .client-address-different.address-handler{
   display:none;
+}
+.search-index{
+  display: block;
+}
+
+#search5{
+  display: none;
+  position: absolute;
+  z-index: 13;
+  top: 17vh;
+  left: 17.5vw;
+  text-transform: initial;
+}
+/* .field_marka{
+  border-radius: 10px;
+  width: 100%;
+  position: relative;
+}
+.search5{
+  border-right: 3px solid #ef3745;
+  border-left: 3px solid #ef3745;
+  border-radius: 12px;
+  max-width: 19%;
+  min-width: 300px;
+  max-height: 70px;
+}
+.search5 li{
+  vertical-align: middle;
+  padding: 1px 0 1px 20px;
+  font-size: 1.3em;
+  box-sizing: border-box;
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  background-color: #ef3745;
+  color: white;
+  display: none;
+}
+.field_marka li:first-child{
+  display: block;
+  background: #80aaf214 url(https://texer.eu/skins/user/rwd_shoper_2/images/user/ico_arrow_down_small_fff.png) no-repeat 95% 50%;
+  border-radius: 10px;
+  padding: 6px 0 6px 20px;
+}
+.field_model li:first-child{
+  display: block;
+  background: #80aaf214 url(https://texer.eu/skins/user/rwd_shoper_2/images/user/ico_arrow_down_small_fff.png) no-repeat 95% 50%;
+  border-radius: 10px;
+  padding: 6px 0 6px 20px;
+}
+.search5 .hidden {
+}
+.search5 ul {
+  padding-left: 0;
+  margin: 5px auto;
+}
+.search5 li:hover{
+  background-color: #ef3745;
+} */
+
+.styled-select select {
+   background: transparent;
+   border: none;
+   font-size: 14px;
+   height: 29px;
+   padding: 5px; /* If you add too much padding here, the options won't show in IE */
+   width: 268px;
+}
+.black select   { color: #fff; }
+.black   { background-color: #000; }
+.semi-square {
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   border-radius: 5px;
 }
