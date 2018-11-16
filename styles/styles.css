@@ -4502,7 +4502,7 @@ ul#dlaczegomy li :nth-child(5) {
  }
  .komplet-text p{
    font-family: 'Source Sans Pro';
-   font-size: 2.5em;
+   font-size: 2.3em;
    font-weight: 800;
    color: var(--color-black17);
    line-height: 2px;
@@ -4565,8 +4565,8 @@ ul#dlaczegomy li :nth-child(5) {
     margin-left: 0.3em;
    }
    .komplet-text{
-     padding-top: 2em;
-     padding-bottom: 2em;
+     padding-top: 5em;
+     padding-bottom: 5em;
    }
    .komplet-dywaniki{
     background-size: 40%
@@ -4580,6 +4580,15 @@ ul#dlaczegomy li :nth-child(5) {
      margin-top: 0;
     }
  }
+@media (max-width: 949px){
+  .komplet{
+    font-size: 11em;
+  }
+  .display-block{
+    margin-top: -19em;
+  }
+}
+
 @media (max-width: 767px)
  {
    .rwd .bottom-footer {
@@ -4635,7 +4644,7 @@ ul#dlaczegomy li :nth-child(5) {
       margin-left: 0;
      }
    .komplet-text{
-     padding-top: 2em;
+     padding-top: 4em;
      padding-bottom: 2em;
    }
    .komplet-dywaniki {
@@ -4664,8 +4673,10 @@ ul#dlaczegomy li :nth-child(5) {
       font-size: 11em;
     }
     .komplet-text {
-        width: 52%;
-        margin-left: 2em;
+      font-size: 0.93em;
+      padding-top: 3.8em;
+      width: 52%;
+      margin-left: 2em;
     }
     .komplet-dywaniki {
         width: 40%;
@@ -5153,6 +5164,7 @@ ul#dlaczegomy li :nth-child(5) {
   visibility: visible;
 }
 
+
 /*RWD*/
  @media (max-width: 1232px) and (min-width: 768px){
   .box-slider .slider-nav {
@@ -5168,6 +5180,9 @@ ul#dlaczegomy li :nth-child(5) {
   margin-right: auto;
   padding: 0;
   display: none;
+}
+#slider-mobile-btn{
+  margin-top: -2em;
 }
 #slider-mobile .title{
   width: 90%;
@@ -5328,8 +5343,9 @@ ul#dlaczegomy li :nth-child(5) {
     line-height: normal;
   }
 }
-
-
+.shop_index div.center{
+  display: none;
+}
 
 /* SEKCJA OPIS PRODUKTU */
 
@@ -5590,7 +5606,7 @@ font-size: 1em;
 
 
 /* kontakt informacyjna */
-#infopage2 .boxhead span, #infopage6 .boxhead span, #infopage7 .boxhead span, #infopage9 .boxhead span {
+#infopage2 .boxhead span, #infopage6 .boxhead span, #infopage7 .boxhead span, #infopage9 .boxhead span, #infopage8 .boxhead span {
   display: none;
 }
 
@@ -5605,7 +5621,7 @@ font-size: 1em;
   font-size: 1.2em;
 }
 
-#infopage10, #infopage14, #infopage15{
+#infopage8, #infopage10, #infopage14, #infopage15{
   width: 80% !important;
   margin: 0 auto !important;
   font-size: 1.2em;
@@ -6760,73 +6776,386 @@ font-size: 1em;
   display: block;
 }
 
-#search5{
-  display: none;
-  position: absolute;
-  z-index: 13;
-  top: 17vh;
-  left: 17.5vw;
+
+#search5 {
+  display: block;
+
+  position: relative;
+  z-index: 999;
+
   text-transform: initial;
 }
-/* .field_marka{
-  border-radius: 10px;
-  width: 100%;
-  position: relative;
-}
-.search5{
+.search5 {
+  box-sizing: border-box;
   border-right: 3px solid #ef3745;
   border-left: 3px solid #ef3745;
   border-radius: 12px;
   max-width: 19%;
   min-width: 300px;
+  height: 200px;
   max-height: 70px;
+  font-size: 1.2em;
+  position:relative;
 }
-.search5 li{
-  vertical-align: middle;
-  padding: 1px 0 1px 20px;
-  font-size: 1.3em;
+.field_marka {
+  border-radius: 10px;
+  width: 100%;
+  position: absolute;
+  top:-4px;
+}
+.field_model {
+  border-radius: 10px;
+  width: 100%;
+  position: absolute;
+  top:32px;
+}
+
+.search5 .list-hidden li {
   box-sizing: border-box;
   list-style: none;
+  vertical-align: middle;
   width: 100%;
   height: 100%;
-  background-color: #ef3745;
+  background: #000
+    url(https://texer.eu/skins/user/rwd_shoper_2/images/user/ico_arrow_down_small_fff.png)
+    no-repeat 95% 50%;
+  border-radius: 10px;
+  padding: 6px 0 6px 20px;
+  color: white;
+  border-radius: 10px;
+  display: none;
+}
+
+.search5 li {
+  box-sizing: border-box;
+  list-style: none;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  padding: 6px 0 6px 20px;
   color: white;
   display: none;
 }
-.field_marka li:first-child{
-  display: block;
-  background: #80aaf214 url(https://texer.eu/skins/user/rwd_shoper_2/images/user/ico_arrow_down_small_fff.png) no-repeat 95% 50%;
+
+.field_marka li:first-child {
   border-radius: 10px;
-  padding: 6px 0 6px 20px;
-}
-.field_model li:first-child{
   display: block;
-  background: #80aaf214 url(https://texer.eu/skins/user/rwd_shoper_2/images/user/ico_arrow_down_small_fff.png) no-repeat 95% 50%;
+  background: #000
+    url(https://texer.eu/skins/user/rwd_shoper_2/images/user/ico_arrow_down_small_fff.png)
+    no-repeat 95% 50%;
+}
+.field_model li:first-child {
   border-radius: 10px;
-  padding: 6px 0 6px 20px;
+  display: block;
+    background: #000
+    url(https://texer.eu/skins/user/rwd_shoper_2/images/user/ico_arrow_down_small_fff.png)
+    no-repeat 95% 50%;
 }
-.search5 .hidden {
+
+.search5 .list-hidden {
 }
+
 .search5 ul {
-  padding-left: 0;
+  padding-left: 0px;
   margin: 5px auto;
 }
-.search5 li:hover{
+.search5 li:hover {
   background-color: #ef3745;
-} */
-
-.styled-select select {
-   background: transparent;
-   border: none;
-   font-size: 14px;
-   height: 29px;
-   padding: 5px; /* If you add too much padding here, the options won't show in IE */
-   width: 268px;
 }
-.black select   { color: #fff; }
-.black   { background-color: #000; }
-.semi-square {
-   -webkit-border-radius: 5px;
-   -moz-border-radius: 5px;
-   border-radius: 5px;
+
+#infopage8{
+  transform: scale(0.8);
+}
+/*collapse-tab rodzaje*/
+
+#infopage8 h2 {
+  margin: 20px auto 30px;
+  font-size: 38px;
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+#infopage8 details {
+  width: 100%;
+  min-height: 5px;
+  max-width: 700px;
+  padding: 15px 60px 15px 2vw;
+  margin: 0;
+  font-size: 14px;
+  border: 1px solid rgba(0,0,0,.1);
+  border-radius: 15px;
+  box-sizing: border-box;
+  transition: all .3s;
+  position: absolute;
+  bottom: 0px;
+}
+
+#infopage8 details + details {
+  margin-top: 20px;
+}
+
+#infopage8 details[open] {
+  min-height: 50px;
+  background-color: #f6f7f8;
+  box-shadow: 2px 2px 20px rgba(0,0,0,.2);
+}
+
+#infopage8 details p {
+  color: #96999d;
+  font-size: 1em;
+  font-weight: 300;
+}
+
+#infopage8 summary {
+  font-size: 1.3em;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* removed outline as for codepen only
+  don't remove focus on elements
+  it's bad accessibility
+  don't be _that_ guy
+*/
+#infopage8 summary:focus {
+  outline: none;
+}
+
+#infopage8 summary::-webkit-details-marker {
+  display: none
+}
+
+#infopage8 summary::after {
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  color: #6494ed;
+  font-family: "Font Awesome 5 Free";
+  font-size: 25px;
+  font-style: normal;
+  font-variant-caps: normal;
+  font-variant-ligatures: normal;
+  font-weight: 900;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  content: "\f077";
+  transform: translateY(-50%);
+  transition: .3s ease;
+}
+
+#infopage8 details[open] summary::after {
+  content: "\f057";
+  font-size: 30px;
+  top: 0;
+  transform: translateY(0);
+  transition: .3s ease;
+}
+
+#infopage8 details[open] summary:hover::after {
+  animation: pulse 1s ease;
+}
+@keyframes pulse {
+  25% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.rodzaje-table{
+}
+#bg-rodzaje-table{
+  width: 80%;
+  margin: 0 auto;
+}
+#rodzaje-thead{
+  font-size: 2em;
+  text-align: center;
+}
+#rodzaje-headtab{
+  background-color: #1D262D;
+  color: #fff;
+  border-top-left-radius: 20px;
+}
+#features-headtab{
+  background-color: #222B32;
+  color: #fff;
+  border-top-right-radius: 20px;
+}
+.rodzaje-body{
+  font-size: 4em;
+  padding-left: 1vw;
+  margin: 0;
+  background-color: #252E3D;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.row.rodzaje-hover{
+  border-top: 1px solid #d4d4d4;
+  position: relative;
+  transition-duration: 0.7s;
+}
+/* .rodzaje-hover:hover{
+  transform: scale(1.03);
+  border: 1px solid #d4d4d4;
+  border-radius: 20px;
+  z-index: 99;
+  transition-timing-function: ease-in-out;
+} */
+.features-body{
+  background-color: var(--color-lightwhite);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.features-body li{
+  list-style-type: none;
+  font-size: 1.3em;
+  padding: 5px 0;
+}
+.features-body li.thick::before{
+  padding: 5px 8px;
+  color: #17C998;
+  font-family: "Font Awesome 5 Free";
+  font-size: 13px;
+  font-style: normal;
+  font-variant-caps: normal;
+  font-variant-ligatures: normal;
+  font-weight: 900;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  content: "\f00c";
+  transform: translateY(-50%);
+  transition: .3s ease;
+}
+.features-body li.unthick::before{
+  padding: 5px 10px;
+  color: var(--color-red);
+  font-family: "Font Awesome 5 Free";
+  font-size: 15px;
+  font-style: normal;
+  font-variant-caps: normal;
+  font-variant-ligatures: normal;
+  font-weight: 900;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  content: "\f00d";
+  transform: translateY(-50%);
+  transition: .3s ease;
+}
+.features-body li.unthick{
+  color: var(--color-lightgray);
+}
+
+.col-7.features-body .col-12{
+  position: absolute;
+  bottom: 15px;
+  width: 53.5%;
+}
+.col-7.features-body .col-6 ul{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0;
+  padding: 0 0 0 20px;
+
+}
+
+.col-3.rodzaje-body .col-1{
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 6vh solid transparent;
+  border-left: 3vh solid #252E3D;
+  border-bottom: 6vh solid transparent;
+  padding: 0;
+  left: 24.8%;
+}
+.rodzaje-body, .features-body, .price-body{
+  min-height: 35vh;
+}
+.rodzaje-body .col-12{
+}
+.rodzaje-body h3{
+  margin: 0 !important;
+}
+.rodzaje-body p{
+  color: #556073;
+  letter-spacing: 16px;
+  font-size: 0.5em;
+  padding-left: 1vw;
+  transform: scaleY(0.75);
+  margin: 0;
+  padding: 0;
+}
+.price-body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4em;
+  font-weight: 800;
+  background-color: #fff;
+}
+/* basic czarne */
+#rodzaje-bc h3{
+  color: #88C5FF;
+}
+#rodzaje-bc{
+  background-image: url(https://texer.eu/skins/user/rwd_shoper_2/images/user/rdz-bc.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: contain;
+}
+#price-bc{
+  border-right: 15px solid #88C5FF;
+}
+/* basic szare */
+#rodzaje-bs h3{
+  color: #ABBCCC;
+}
+#rodzaje-bs{
+  background-image: url(https://texer.eu/skins/user/rwd_shoper_2/images/user/rdz-bc.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: contain;
+}
+#price-bs{
+  border-right: 15px solid #ABBCCC;
+}
+/* basic antracyt */
+#rodzaje-ba h3{
+  color: #45637F;
+}
+#rodzaje-ba{
+  background-image: url(https://texer.eu/skins/user/rwd_shoper_2/images/user/rdz-bc.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: contain;
+}
+#price-ba{
+  border-right: 15px solid #45637F;
+}
+/* carbon czarne */
+#rodzaje-cc h3{
+  color: #8c9a6f;
+}
+#rodzaje-cc{
+  background-image: url(https://texer.eu/skins/user/rwd_shoper_2/images/user/rdz-bc.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: contain;
+}
+#price-cc{
+  border-right: 15px solid #8c9a6f;
 }
