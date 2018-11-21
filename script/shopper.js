@@ -101,7 +101,6 @@ function myMap() {
     var map = new google.maps.Map(mapCanvas, mapOptions);
 }
 
-
 //przejście do wybranej kategorii
 // function Item(y){
 //   if(document.documentElement.lang=="de"){
@@ -310,6 +309,19 @@ function List(x){
 			model.appendChild(li);
 		}
 	}
-
-
 }
+
+//modal pop-ups
+$(document).ready(function() {
+  $(".rdz-btn").on("click", function() {
+    var modal = $(this).data("modal");
+    $(modal).show();
+  });
+
+  $(".modal").on("click", function(e) {
+    var className = e.target.className;
+    if(className === "modal" || className === "close"){
+      $(this).closest(".modal").hide();
+    }
+  });
+});

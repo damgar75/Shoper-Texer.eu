@@ -1295,17 +1295,29 @@ input, textarea, select, button {
 /*PAGINATORY NA DOLE STRONY - produkty polecane*/
 .floatcenterwrap .paginator li {
   font-size: 2em;
+  background-color: ghostwhite;
+  padding: 12px;
+  border-radius: 7px;
+}
+.floatcenterwrap .paginator li:hover {
+  background-color: var(--color-blue);
+}
+.floatcenterwrap .paginator li.selected {
+  background-color: var(--color-blue);
 }
 .floatcenterwrap .paginator li span{
   border: none;
   border-radius: 1em;
 }
 .floatcenterwrap .paginator li.selected {
-    color: #dbdbdb;
+    color: #fff;
 }
 .floatcenterwrap .paginator li a {
   border: none;
   border-radius: 1em;
+}
+.floatcenterwrap .paginator li a:hover{
+  color: #000;
 }
 /*
 /*==========================================================================================*/
@@ -6710,14 +6722,12 @@ font-size: 1em;
     height: 100px;
   }
 }
-
 .shop_basket_address #box_loginsmall, .shop_basket_step3 #box_loginsmall, .shop_basket_done #box_loginsmall{
    display: none;
 }
 .shop_product_list .group.group-filter {
    display: none;
 }
-
 #contact-up{
   display: flex;
   flex-direction: row;
@@ -6743,7 +6753,6 @@ font-size: 1em;
     padding: 0;
     overflow: hidden;
 }
-
 #contact-up li {
   float: left;
   color: var(--color-fff);
@@ -6753,7 +6762,6 @@ font-size: 1em;
   padding: 0 15px;
   letter-spacing: 0.3px;
 }
-
 #contact-up li a {
     display: inline-block;
     color: var(--color-fff);
@@ -6775,14 +6783,10 @@ font-size: 1em;
 .search-index{
   display: block;
 }
-
-
 #search5 {
   display: block;
-
   position: relative;
   z-index: 999;
-
   text-transform: initial;
 }
 .search5 {
@@ -6809,7 +6813,6 @@ font-size: 1em;
   position: absolute;
   top:32px;
 }
-
 .search5 .list-hidden li {
   box-sizing: border-box;
   list-style: none;
@@ -6825,7 +6828,6 @@ font-size: 1em;
   border-radius: 10px;
   display: none;
 }
-
 .search5 li {
   box-sizing: border-box;
   list-style: none;
@@ -6837,7 +6839,6 @@ font-size: 1em;
   color: white;
   display: none;
 }
-
 .field_marka li:first-child {
   border-radius: 10px;
   display: block;
@@ -6852,10 +6853,8 @@ font-size: 1em;
     url(https://texer.eu/skins/user/rwd_shoper_2/images/user/ico_arrow_down_small_fff.png)
     no-repeat 95% 50%;
 }
-
 .search5 .list-hidden {
 }
-
 .search5 ul {
   padding-left: 0px;
   margin: 5px auto;
@@ -6863,12 +6862,11 @@ font-size: 1em;
 .search5 li:hover {
   background-color: #ef3745;
 }
-
 #infopage8{
-  transform: scale(0.8);
+  transform: scale(0.95);
+  margin-bottom: 5em;
 }
 /*collapse-tab rodzaje*/
-
 #infopage8 h2 {
   margin: 20px auto 30px;
   font-size: 38px;
@@ -6877,57 +6875,48 @@ font-size: 1em;
   font-weight: 300;
   line-height: 1.5;
 }
-
 #infopage8 details {
   width: 100%;
   min-height: 5px;
   max-width: 700px;
-  padding: 15px 60px 15px 2vw;
+  padding: 15px 20px 15px 2vw;
   margin: 0;
   font-size: 14px;
   border: 1px solid rgba(0,0,0,.1);
   border-radius: 15px;
   box-sizing: border-box;
   transition: all .3s;
-  position: absolute;
+  position: relative;
   bottom: 0px;
 }
-
 #infopage8 details + details {
   margin-top: 20px;
 }
-
 #infopage8 details[open] {
   min-height: 50px;
   background-color: #f6f7f8;
   box-shadow: 2px 2px 20px rgba(0,0,0,.2);
 }
-
 #infopage8 details p {
   color: #96999d;
-  font-size: 1em;
+  font-size: 0.73vw;
   font-weight: 300;
+  padding: 0 40px 0px 15px;
+  text-align: justify;
 }
-
 #infopage8 summary {
-  font-size: 1.3em;
-  font-weight: 500;
+  font-size: 1.2em;
+  font-weight: 600;
   cursor: pointer;
+  padding: 0;
+  color: var(--color-blue);
 }
-
-/* removed outline as for codepen only
-  don't remove focus on elements
-  it's bad accessibility
-  don't be _that_ guy
-*/
 #infopage8 summary:focus {
   outline: none;
 }
-
 #infopage8 summary::-webkit-details-marker {
   display: none
 }
-
 #infopage8 summary::after {
   padding: 20px;
   position: absolute;
@@ -6942,19 +6931,17 @@ font-size: 1em;
   font-weight: 900;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
-  content: "\f077";
+  content: "\f078";
   transform: translateY(-50%);
   transition: .3s ease;
 }
-
 #infopage8 details[open] summary::after {
   content: "\f057";
-  font-size: 30px;
+  font-size: 22px;
   top: 0;
   transform: translateY(0);
   transition: .3s ease;
 }
-
 #infopage8 details[open] summary:hover::after {
   animation: pulse 1s ease;
 }
@@ -6996,7 +6983,7 @@ font-size: 1em;
   font-size: 4em;
   padding-left: 1vw;
   margin: 0;
-  background-color: #252E3D;
+  background-color: #f0f0f0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -7006,13 +6993,6 @@ font-size: 1em;
   position: relative;
   transition-duration: 0.7s;
 }
-/* .rodzaje-hover:hover{
-  transform: scale(1.03);
-  border: 1px solid #d4d4d4;
-  border-radius: 20px;
-  z-index: 99;
-  transition-timing-function: ease-in-out;
-} */
 .features-body{
   background-color: var(--color-lightwhite);
   display: flex;
@@ -7021,7 +7001,7 @@ font-size: 1em;
 }
 .features-body li{
   list-style-type: none;
-  font-size: 1.3em;
+  font-size: 0.83vw;
   padding: 5px 0;
 }
 .features-body li.thick::before{
@@ -7041,7 +7021,7 @@ font-size: 1em;
 }
 .features-body li.unthick::before{
   padding: 5px 10px;
-  color: var(--color-red);
+  color: var(--color-lightgray);
   font-family: "Font Awesome 5 Free";
   font-size: 15px;
   font-style: normal;
@@ -7060,7 +7040,7 @@ font-size: 1em;
 
 .col-7.features-body .col-12{
   position: absolute;
-  bottom: 15px;
+  top: 5px;
   width: 53.5%;
 }
 .col-7.features-body .col-6 ul{
@@ -7071,13 +7051,12 @@ font-size: 1em;
   padding: 0 0 0 20px;
 
 }
-
 .col-3.rodzaje-body .col-1{
   position: absolute;
   width: 0;
   height: 0;
   border-top: 6vh solid transparent;
-  border-left: 3vh solid #252E3D;
+  border-left: 3vh solid #f0f0f0;
   border-bottom: 6vh solid transparent;
   padding: 0;
   left: 24.8%;
@@ -7093,7 +7072,8 @@ font-size: 1em;
 .rodzaje-body p{
   color: #556073;
   letter-spacing: 16px;
-  font-size: 0.5em;
+  /* font-size: 0.5em; */
+  font-size: 1.27vw;
   padding-left: 1vw;
   transform: scaleY(0.75);
   margin: 0;
@@ -7109,7 +7089,8 @@ font-size: 1em;
 }
 /* basic czarne */
 #rodzaje-bc h3{
-  color: #88C5FF;
+  color: #000000;
+  font-size: 2.95vw;
 }
 #rodzaje-bc{
   background-image: url(https://texer.eu/skins/user/rwd_shoper_2/images/user/rdz-bc.png);
@@ -7118,44 +7099,608 @@ font-size: 1em;
   background-size: contain;
 }
 #price-bc{
-  border-right: 15px solid #88C5FF;
-}
-/* basic szare */
-#rodzaje-bs h3{
-  color: #ABBCCC;
-}
-#rodzaje-bs{
-  background-image: url(https://texer.eu/skins/user/rwd_shoper_2/images/user/rdz-bc.png);
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  background-size: contain;
-}
-#price-bs{
-  border-right: 15px solid #ABBCCC;
+  border-right: 15px solid #000000;
 }
 /* basic antracyt */
 #rodzaje-ba h3{
-  color: #45637F;
+  color: #525252;
+  font-size: 2.95vw;
 }
 #rodzaje-ba{
-  background-image: url(https://texer.eu/skins/user/rwd_shoper_2/images/user/rdz-bc.png);
+  background-image: url(https://texer.eu/skins/user/rwd_shoper_2/images/user/rdz-ba.png);
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: contain;
 }
 #price-ba{
-  border-right: 15px solid #45637F;
+  border-right: 15px solid #525252;
+}
+/* basic szare */
+#rodzaje-bs h3{
+  color: #9ea6ad;
+  font-size: 2.95vw;
+}
+#rodzaje-bs{
+  background-image: url(https://texer.eu/skins/user/rwd_shoper_2/images/user/rdz-bs.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: contain;
+}
+#price-bs{
+  border-right: 15px solid #9ea6ad;
 }
 /* carbon czarne */
 #rodzaje-cc h3{
-  color: #8c9a6f;
+  color: #7e6ca6;
+  font-size: 2.95vw;
 }
 #rodzaje-cc{
-  background-image: url(https://texer.eu/skins/user/rwd_shoper_2/images/user/rdz-bc.png);
+  background-image: url(https://texer.eu/skins/user/rwd_shoper_2/images/user/rdz-cc.png);
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: contain;
 }
 #price-cc{
-  border-right: 15px solid #8c9a6f;
+  border-right: 15px solid #7e6ca6;
+}
+/* logo czarne */
+#rodzaje-lc h3{
+  color: #DB5D64;
+  font-size: 2.95vw;
+}
+#rodzaje-lc{
+  background-image: url(https://texer.eu/skins/user/rwd_shoper_2/images/user/rdz-lc.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: contain;
+}
+#price-lc{
+  border-right: 15px solid #DB5D64;
+}
+/* premium czarne */
+#rodzaje-pc h3{
+  color: #5e719e;
+  font-size: 2.95vw;
+}
+#rodzaje-pc{
+  background-image: url(https://texer.eu/skins/user/rwd_shoper_2/images/user/rdz-pc.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: contain;
+}
+#price-pc{
+  border-right: 15px solid #5e719e;
+}
+/* excellence czarne */
+#rodzaje-ec h3{
+  color: #000;
+  font-size: 2.8vw;
+}
+#rodzaje-ec{
+  background-image: url(https://texer.eu/skins/user/rwd_shoper_2/images/user/rdz-ec.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: contain;
+}
+#price-ec{
+  border-right: 15px solid #000;
+}
+/* sport czarne */
+#rodzaje-sc h3{
+  color: #e21010;
+  font-size: 2.95vw;
+}
+#rodzaje-sc{
+  background-image: url(https://texer.eu/skins/user/rwd_shoper_2/images/user/rdz-sc.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: contain;
+  border-bottom-left-radius: 25px;
+}
+#price-sc{
+  border-right: 15px solid #e21010;
+  border-bottom-right-radius: 25px;
+}
+@media (max-width: 1500px){
+  #infopage8{
+    transform: scale(1);
+  }
+  #bg-rodzaje-table{
+    width: 100%;
+  }
+  #infopage8 .col-2 {
+    width: 16.6%;
+  }
+}
+@media (max-width: 1250px){
+  #infopage8 {
+    width: 90% !important;
+    margin: 0 auto !important;
+  }
+  .features-body li {
+    font-size: 1vw;
+  }
+  #infopage8 details p {
+      font-size: 0.95vw;
+      font-weight: 300;
+  }
+}
+
+@media (max-width: 979px){
+  #infopage8 {
+    width: 100% !important;
+  }
+  #rodzaje-thead{
+    display: none;
+  }
+  .features-body li {
+      font-size: 2vw;
+  }
+  .col-3.rodzaje-body .col-1{
+    display: none;
+  }
+  .rodzaje-body p {
+    font-size: 4.27vw;
+    padding: 5px 15px;
+  }
+  #rodzaje-lc p, #rodzaje-ec p, #rodzaje-sc p{
+    padding: 5px 0;
+  }
+  .col-3.rodzaje-body h3 {
+    font-size: 8.95vw !important;
+    padding: 10px 15px;
+  }
+  #rodzaje-bc, #rodzaje-ba, #rodzaje-bs, #rodzaje-cc, #rodzaje-pc {
+    transform: scaleX(-1);
+    background-size: 60%;
+  }
+  #rodzaje-lc, #rodzaje-ec, #rodzaje-sc{
+    background-size: 60%;
+  }
+  .rodzaje-body .col-12{
+    transform: scaleX(-1);
+  }
+  #rodzaje-lc h3, #rodzaje-lc p, #rodzaje-ec h3, #rodzaje-ec p, #rodzaje-sc h3, #rodzaje-sc p{
+    transform: scaleX(-1);
+    text-align: right;
+  }
+  #rodzaje-ec h3{
+    font-size: 6.95vw !important;
+  }
+  #infopage8 .col-2.price-body{
+    width: 100%;
+    border-right: none;
+  }
+  #infopage8 details {
+    width: 98%;
+    max-width: 900px;
+    padding: 15px 20px 15px 2vw;
+    margin: 0 auto;
+  }
+  .col-7.features-body .col-12 {
+    position: absolute;
+    top: 71vh;
+    width: 100%;
+  }
+  #infopage8 summary {
+    font-size: 1.6em;
+    font-weight: 400;
+  }
+  #infopage8 details p {
+    font-size: 1.7vw;
+    line-height: normal;
+  }
+}
+@media (max-width: 767px) {
+  .rodzaje-body {
+    min-height: 15vh;
+  }
+  .features-body{
+    flex-direction: column;
+  }
+  .col-7.features-body .col-6{
+    width: 100%;
+    padding: 0 10px;
+  }
+  .features-body li {
+    font-size: 3vw;
+  }
+  #rodzaje-bc, #rodzaje-ba, #rodzaje-bs, #rodzaje-cc, #rodzaje-pc, #rodzaje-lc, #rodzaje-ec, #rodzaje-sc{
+    background-size: contain;
+  }
+  .col-7.features-body .col-12 {
+    position: absolute;
+    top: 43em;
+    width: 100%;
+  }
+  #infopage8 summary {
+    font-size: 1.4em;
+  }
+  #infopage8 details p {
+    font-size: 2.5vw;
+  }
+}
+@media (max-width: 520px){
+  .col-7.features-body .col-12 {
+    position: absolute;
+    top: 40em;
+    width: 100%;
+  }
+  #infopage8 details {
+    font-size: 10px;
+  }
+  #infopage8 details p {
+    font-size: 1.4em;
+  }
+  #infopage8 details[open] {
+    min-height: 50px;
+    z-index: 9999;
+  }
+}
+/*rodzaje-mobile*/
+#infopage18{
+  width: 80%;
+  margin: 0 auto 5% auto;
+}
+#infopage18 .boxhead span{
+  display: none;
+}
+.rowan{
+  background-position: bottom;
+  background-size: contain;
+  background-repeat: repeat-x;
+}
+.rowan:nth-child(odd){
+  background-color: #233039;
+}
+.rowan:nth-child(even){
+  background-color: #27333f;
+}
+.r-bc-m, .r-ba-m, .r-bs-m, .r-cc-m{
+  margin-bottom: 30px;
+}
+.r-bc-m, .r-lc-m{
+  border-top-left-radius: 24px;
+  border-bottom-left-radius: 24px;
+}
+.r-cc-m, .r-sc-m{
+  border-top-right-radius: 24px;
+  border-bottom-right-radius: 24px;
+}
+#infopage18{
+  font-size: 0.8vw;
+}
+#infopage18 h1{
+  font-size: 4em;
+  text-align: center;
+  color: var(--color-lightgray);
+}
+#infopage18 h3, #infopage18 h4, #infopage18 ul, #infopage18 li{
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+#infopage18 li{
+  list-style: none;
+  text-align: center;
+}
+#infopage18 h3{
+  color: inherit;
+  margin-top: 3vw;
+  padding: 3px 0;
+  font-size: 2.7vw;
+}
+#infopage18 h4{
+  font-size: 1.2vw;
+  font-weight: 300;
+  letter-spacing: 0.7vw;
+  padding-left: 0.65vw;
+  color: #eaeaea;
+  transform: scale(0.7);
+}
+#infopage18 .norm{
+  color: #eaeaea;
+}
+#infopage18 .asset{
+  color: inherit;
+}
+#infopage18 .non-active{
+  color: #636363;
+}
+
+.r-bc-m{color: #259cb7;}
+.r-ba-m{color: #41b8d8;}
+.r-bs-m{color: #84e0ef;}
+.r-cc-m{color: #43d6ce;}
+.r-lc-m{color: #f4f078;}
+.r-pc-m{color: #ce8125;}
+.r-ec-m{color: #ae54e2;}
+.r-sc-m{color: #d3445c;}
+.r-table-up p{color: #eaeaea; text-align: center; font-size: 1.8vw; margin: 1vw;}
+
+#rdz-bc-m-btn button{background-color: #259cb7;}
+#rdz-ba-m-btn button{background-color: #41b8d8;}
+#rdz-bs-m-btn button{background-color: #84e0ef;}
+#rdz-cc-m-btn button{background-color: #43d6ce;}
+#rdz-lc-m-btn button{background-color: #f4f078;}
+#rdz-pc-m-btn button{background-color: #ce8125;}
+#rdz-ec-m-btn button{background-color: #ae54e2;}
+#rdz-sc-m-btn button{background-color: #d3445c;}
+
+.rdz-m-btn{
+  width: 90%;
+  margin: 0;
+  position: absolute;
+}
+.rdz-m-btn p{
+  width: 100%;
+  text-align: center;
+}
+#infopage18 .r-table-down, #infopage18 .r-table-up{
+  width: 85%;
+  padding: 5%;
+  margin: 0 auto;
+  background-color: #eaeaea15;
+  border-radius: 12px;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+#infopage18 .r-table-up{
+  margin-top: 3vw;
+  background-color: #eaeaea30;
+  border-radius: 12px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+#infopage18 .r-table-down{
+  padding-bottom: 2vw;
+  position: relative;
+}
+.r-table-big{
+  position: relative;
+  margin-bottom: 8vw;
+}
+.col-3.r-bc-m.rowan{ background-image: url(https://texer.eu/skins/user/rwd_shoper_2/images/user/rdz-bc-m.png);}
+.col-3.r-ba-m.rowan{ background-image: url(https://texer.eu/skins/user/rwd_shoper_2/images/user/rdz-ba-m.png);}
+.col-3.r-bs-m.rowan{ background-image: url(https://texer.eu/skins/user/rwd_shoper_2/images/user/rdz-bs-m.png);}
+.col-3.r-cc-m.rowan{ background-image: url(https://texer.eu/skins/user/rwd_shoper_2/images/user/rdz-cc-m.png);}
+.col-3.r-lc-m.rowan{ background-image: url(https://texer.eu/skins/user/rwd_shoper_2/images/user/rdz-lc-m.png);}
+.col-3.r-pc-m.rowan{ background-image: url(https://texer.eu/skins/user/rwd_shoper_2/images/user/rdz-pc-m.png);}
+.col-3.r-ec-m.rowan{ background-image: url(https://texer.eu/skins/user/rwd_shoper_2/images/user/rdz-ec-m.png);}
+.col-3.r-sc-m.rowan{ background-image: url(https://texer.eu/skins/user/rwd_shoper_2/images/user/rdz-sc-m.png);}
+/* Popup Box */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 8888; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+}
+.modal-content h2 {
+  color: #424242;
+  font-size: 3vw;
+  text-align: center;
+  margin-bottom: 0em !important;
+  margin-top: 0;
+  font-weight: 600;
+}
+.modal-content h3{
+  margin: 0 2.4vw 2.6vw 0 !important;
+  padding: 3px 0 !important;
+  font-size: 1.5vw !important;
+  font-weight: 300 !important;
+  background-color: #f3f3f3;
+  border-radius: 12px;
+  transform: scaleY(0.8);
+}
+.modal-content p {
+  color: #303030;
+  font-size: 0.8vw;
+  text-align: justify;
+  line-height: normal;
+  margin: 0.7em auto;
+  width: 80%;
+}
+.modal-content ul{
+  width: 80% !important;
+  margin: 0 auto !important;
+}
+.modal-content li{
+  line-height: normal !important;
+  margin: 0 auto !important;
+  color: #303030 !important;
+  font-size: 0.7vw !important;
+  text-align: left !important;
+  list-style: circle !important;
+  margin-left: 3vw !important;
+  width: 80%;
+}
+.modal-content hr{
+  width: 40%;
+}
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fbfbfb;
+  margin: 5vw auto;
+  padding: 40px 40px;
+  border: 1px solid #888;
+  border-radius: 24px;
+  width: 90%;
+}
+@media (min-width: 1366px) {
+  .modal-content {
+    background-color: #fbfbfb;
+    margin: 5vw auto;
+    padding: 40px 40px;
+    border: 1px solid #888;
+    border-radius: 24px;
+    width: 40%;
+  }
+}
+.close {
+  color: #424242;
+  float: right;
+  font-size: 4vw;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+button.rdz-btn {
+  border-radius: 24px;
+  padding: 10px 25%;
+  margin: 0 auto;
+  font-size: 0.8vw;
+  font-weight: 400;
+}
+button.rdz-btn:hover {
+ filter: saturate(0.5);
+}
+
+@media (max-width: 1280px) {
+  #infopage18{
+    width: 90%;
+  }
+  #infopage18 .r-table-down {
+    padding-bottom: 2.6vw;
+    font-size: 1.05vw;
+  }
+  #infopage18 .r-table-up p {
+    color: #eaeaea;
+    text-align: center;
+    font-size: 2.4vw;
+  }
+  #infopage18 h3 {
+    font-size: 3.2vw;
+  }
+  #infopage18 h4 {
+    font-size: 1.8vw;
+    padding-left: 1vw;
+  }
+  button.rdz-btn {
+    border-radius: 24px;
+    padding: 10px 25%;
+    margin: 0 auto;
+    font-size: 1.2vw;
+  }
+}
+
+@media (max-width: 1180px) {
+  #infopage18{
+    width: 90%;
+  }
+}
+@media (max-width: 978px){
+  .col-3{
+    width: 50%;
+  }
+  #infopage18 h3 {
+    font-size: 5.7vw;
+  }
+  #infopage18 h4 {
+    font-size: 3.2vw;
+  }
+  .r-table-up p {
+    font-size: 3.8vw;
+  }
+  #infopage18 .r-table-big{
+    margin-bottom: 20vw;
+  }
+  #infopage18 .r-table-down {
+    padding-bottom: 4vw;
+    font-size: 1.8vw;
+  }
+  button.rdz-btn {
+    font-size: 1.8vw;
+  }
+  .r-lc-m, .r-pc-m, .r-ec-m, .r-sc-m {
+    margin-bottom: 30px;
+  }
+  .r-bc-m, .r-bs-m, .r-lc-m, .r-ec-m {
+    border-top-left-radius: 24px;
+    border-bottom-left-radius: 24px;
+  }
+  .r-ba-m, .r-cc-m, .r-pc-m, .r-sc-m {
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 24px;
+  }
+  .modal-content {
+    box-sizing: border-box;
+  }
+  .modal-content p {
+    font-size: 2vw;
+  }
+  .modal-content li {
+    font-size: 2vw !important;
+    margin-left: 30px !important;
+  }
+  .modal-content h2 {
+    font-size: 12vw;
+  }
+  .modal-content h3 {
+    font-size: 5vw !important;
+  }
+}
+@media (max-width: 578px){
+  #infopage18 .col-3{
+    width: 100%;
+  }
+  #infopage18 h3 {
+    font-size: 9.7vw;
+  }
+  #infopage18 h4 {
+    font-size: 6vw;
+  }
+  #infopage18 .r-table-up p {
+    font-size: 6.8vw;
+  }
+  #infopage18 .r-table-down {
+    padding-bottom: 8vw;
+    font-size: 3.5vw;
+  }
+  button.rdz-btn {
+    font-size: 2.5vw;
+  }
+  #infopage18 .r-table-big {
+    margin-bottom: 35vw;
+  }
+  .r-bc-m, .r-bs-m, .r-lc-m, .r-ec-m, .r-ba-m, .r-cc-m, .r-pc-m, .r-sc-m {
+    border-radius: 24px;
+  }
+  .modal-content p {
+    font-size: 3vw;
+  }
+  .modal-content li {
+    font-size: 2.5vw !important;
+    margin-left: 30px !important;
+  }
+  .modal-content h2 {
+    font-size: 12vw;
+  }
+  .modal-content h3 {
+    font-size: 5vw !important;
+  }
+  .close {
+    font-size: 20vw;
+    font-weight: bold;
+    position: absolute;
+    right: 10%;
+  }
+  .modal-content p, .modal-content li {
+    width: 95%;
+  }
+  button.rdz-btn {
+    font-size: 3.5vw;
+  }
+  #infopage18 h1 {
+    font-size: 8em;
+  }
 }
