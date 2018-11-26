@@ -5,42 +5,26 @@
         <p class="formularz-index" style="font-weight: bold;">wybierz</p>
         <p class="formularz-index" style="font-weight: 200;">samochód</p>
       </div>
+      <div id="search-mini-old">
+        <div class="f-row">
+          <div class="pick-car1 f-grid-6">WYBIERZ<br />SAMOCHÓD</div>
+          <div class="pick-car2 f-grid-5"><form><select id="form_marka" class="form-mini" name="one" onchange="List(this.value,this.form.two)"></select><select id="form_model" class="form-mini" name="two" onchange="Item(this.form.two)"></select></form></div>
+          <div class="pick-car3 f-grid-1"> </div>
+        </div>
+      </div>
       <div class="form-index">
-        <div id="search1" style="text-align: center;"><form><select id="form_marka" class="form-big" name="one" onchange="List(this.value,this.form.two)">
-          <option value="marka">Marka</option>
-          <option value="alfa romeo">Alfa Romeo</option>
-          <option value="audi">Audi</option>
-          <option value="bmw">BMW</option>
-          <option value="citroen">Citroen</option>
-          <option value="chevrolet">Chevrolet</option>
-          <option value="dacia">Dacia</option>
-          <option value="daf">Daf</option>
-          <option value="fiat">Fiat</option>
-          <option value="ford">Ford</option>
-          <option value="honda">Honda</option>
-          <option value="hyundai">Hyundai</option>
-          <option value="kia">Kia</option>
-          <option value="lancia">Lancia</option>
-          <option value="land rover">Land Rover</option>
-          <option value="mazda">Mazda</option>
-          <option value="mercedes-benz">Mercedes-Benz</option>
-          <option value="mitsubishi">Mitsubishi</option>
-          <option value="nissan">Nissan</option>
-          <option value="opel">Opel</option>
-          <option value="peugeot">Peugeot</option>
-          <option value="porsche">Porsche</option>
-          <option value="renault">Renault</option>
-          <option value="seat">Seat</option>
-          <option value="smart">Smart</option>
-          <option value="subaru">Subaru</option>
-          <option value="suzuki">Suzuki</option>
-          <option value="skoda">Skoda</option>
-          <option value="toyota">Toyota</option>
-          <option value="volvo">Volvo</option>
-          <option value="volkswagen">Volkswagen</option>
-        </select><select id="form_model" class="form-big" name="two" onchange="Item(this.form.two)">
-          <option value="model">Model</option>
-        </select></form></div>
+        <div class="search5">
+          <div class="field_marka">
+            <ul>
+              <li>Marka</li>
+            </ul>
+          </div>
+          <div class="field_model">
+            <ul>
+            <li value="0">Model</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </div>
